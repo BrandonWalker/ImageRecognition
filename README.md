@@ -1,2 +1,2 @@
 # ImageRecognition
-ImageRecognition project \
+ImageRecognition project using OpenCV and java programming language 
