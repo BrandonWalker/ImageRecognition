@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+
+<BorderPane prefHeight="408.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.decController">
+	<left>
+		<VBox alignment="CENTER">
+			<padding>
+				<Insets left="10" right="10" />
+			</padding>
+   <children>
+   			<ImageView fx:id="originalImage" />
+   </children>
+		</VBox>
+	</left>
+	<right>
+		<VBox alignment="CENTER" spacing="10">
+			<padding>
+				<Insets left="10" right="10" />
+			</padding>
+   <children>
+   			<ImageView fx:id="transformedImage" />
+   </children>
+		</VBox>
+	</right>
+	<bottom>
+		<HBox alignment="CENTER" prefHeight="66.0" prefWidth="562.0" spacing="10">
+			<padding>
+				<Insets bottom="25" left="25" right="25" top="25" />
+			</padding>
+   <children>
+   			<Button alignment="center" onAction="#loadImage" text="Load Image" />
+            <Button mnemonicParsing="false" onAction="#Canny" text="Canny edge detection" />
+            <Slider fx:id="threshold"/>
+   </children>
+		</HBox>
+	</bottom>
+</BorderPane>
